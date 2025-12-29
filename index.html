@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清福長照集團-生活福祉課 | 居家牙醫服務</title>
+    <!-- 設定網頁 Icon (Favicon) -->
+    <link rel="icon" href="https://www.hok.com.tw/wp-content/uploads/2019/10/cropped-logo-32x32.png" sizes="32x32" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* --- 1. 全局設定與清福色調 --- */
+        :root {
+            /* 正宗清福紅：大氣、喜慶、活力 */
+            --chingfu-red: #D32F2F;        /* 主色：清福紅 */
+            --chingfu-dark-red: #B71C1C;   /* 深色按鈕/強調 */
+            --chingfu-light-red: #FFEBEE;  /* 淺粉紅背景：溫柔 */
+            
+            --chingfu-brown: #4E342E;      /* 文字深褐：穩重輔助色 */
+            --text-color: #424242;
+            --white: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #FAFAFA;
+            scroll-behavior: smooth; /* 讓點擊連結滑動更順暢 */
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        
+        /* --- 2. 導覽列 --- */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            border-top: 5px solid var(--chingfu-red); /* 頂部紅線 */
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px; /* 手機版邊距 */
+        }
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--chingfu-red); /* Logo文字改紅 */
+            display: flex;
+            align-items: center;
+        }
+        .logo-text i { color: var(--chingfu-red); margin-right: 10px; font-size: 24px; }
+        
+        .nav-btn {
+            background-color: var(--chingfu-red);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-shadow: 0 4px 6px rgba(211, 47, 47, 0.2);
+        }
+        .nav-btn:hover { background-color: var(--chingfu-dark-red); transform: translateY(-1px); }
+
+        /* --- 3. 首屏 Hero Section (大氣) --- */
+        .hero {
+            /* 背景圖建議換成稍微暖色調一點的醫療圖 */
+            background: linear-gradient(rgba(183, 28, 28, 0.4), rgba(66, 66, 66, 0.7)), url('https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh; 
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-tag {
+            background-color: var(--chingfu-red);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
+        .cta-button {
+            background-color: var(--chingfu-red);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(183, 28, 28, 0.4);
+            transition: transform 0.2s;
+            display: inline-block;
+            border: 2px solid white; /* 增加一點層次 */
+        }
+        .cta-button:hover { transform: translateY(-3px); background-color: var(--chingfu-dark-red); }
+
+        /* --- 4. 稀缺性/新聞區塊 --- */
+        .section-padding { padding: 80px 0; }
+        .bg-light { background-color: var(--chingfu-light-red); } /* 改為淺紅背景 */
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start; /* 改為靠上對齊 */
+        }
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--chingfu-red); /* 標題紅 */
+            margin-bottom: 30px;
+            position: relative;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--chingfu-dark-red);
+            margin-top: 15px;
+        }
+        .news-box {
+            background: white;
+            padding: 25px;
+            border-left: 5px solid var(--chingfu-red);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        .news-quote { font-size: 1.1rem; color: #555; font-style: italic; }
+        .news-source { margin-top: 15px; font-size: 0.9rem; color: #999; text-transform: uppercase; font-weight: bold; }
+
+        /* 新聞連結列表樣式 */
+        .news-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .news-links li {
+            margin-bottom: 12px;
+        }
+        .news-links a {
+            color: var(--chingfu-brown);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s;
+            background: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .news-links a:hover {
+            color: var(--chingfu-red);
+            border-color: var(--chingfu-red);
+            background: #fff5f5;
+            transform: translateX(5px);
+        }
+        .news-links i {
+            color: var(--chingfu-red);
+            margin-right: 12px;
+        }
+
+        /* --- 5. 品牌故事 (影片) --- */
+        .story-section { background-color: white; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+        }
+        .story-text h3 { color: var(--chingfu-red); font-size: 1.5rem; margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+
+        /* --- 6. 服務方案卡片 --- */
+        .pricing-section { background-color: var(--chingfu-brown); color: white; text-align: center; } /* 棕色底配紅字會不清楚，這裡維持深棕底，但卡片內用紅 */
+        .pricing-section .section-title { color: white; }
+        .pricing-section .section-title::after { background-color: white; margin: 15px auto; }
+        
+        .price-card {
+            background: white;
+            color: var(--text-color);
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            border-top: 8px solid var(--chingfu-red); /* 頂部增加紅條 */
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        .promo-badge {
+            position: absolute;
+            top: 25px; right: -35px;
+            background: var(--chingfu-red);
+            color: white;
+            padding: 10px 40px;
+            transform: rotate(45deg);
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .price-amount {
+            font-size: 4rem;
+            color: var(--chingfu-red);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        .price-original {
+            font-size: 1.2rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+        .service-list {
+            text-align: left;
+            margin: 30px 0;
+            list-style: none;
+        }
+        .service-list li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .service-list li i { color: var(--chingfu-red); margin-right: 15px; font-size: 1.1rem; }
+
+        /* --- 7. 表單嵌入區塊 (美觀卡片樣式) --- */
+        .form-section { background-color: #f4f4f4; text-align: center; }
+        .form-wrapper {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08); /* 柔和的高級陰影 */
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+        .form-wrapper:hover {
+            transform: translateY(-5px); /* 微互動效果 */
+        }
+
+        /* --- RWD 手機適配 --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .news-grid { grid-template-columns: 1fr; }
+            .col-text { padding: 30px 0; }
+            .price-amount { font-size: 3rem; }
+            .section-title { font-size: 1.8rem; }
+            .form-wrapper { padding: 40px 20px; }
+            .cta-button { padding: 15px 30px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <header>
+        <div class="container nav-flex">
+            <div class="logo-text">
+                <i class="fa-solid fa-house-medical"></i> 清福長照集團-生活福祉課
+            </div>
+            <a href="#booking" class="nav-btn">立即預約</a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section：大氣門面 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <!-- 修正：主體是清福，服務是居家牙醫 -->
+            <div class="hero-tag">清福長照集團 x 居家牙醫服務</div>
+            <h1>行動不便無法出門？<br>讓牙科診療台來到床邊</h1>
+            <p>專為臥床、重症長輩設計的口腔清潔與洗牙服務。<br>免除舟車勞頓，在熟悉的床上完成專業護理。</p>
+            <a href="#booking" class="cta-button">搶先預約 $1,200 方案</a>
+        </div>
+    </section>
+
+    <!-- 2. 權威與稀缺 (新聞背書 - 加入具體數據與連結) -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="news-grid">
+                <div>
+                    <!-- 修正標題：強調清福的用心 -->
+                    <h2 class="section-title">全台僅 1% 牙醫投入<br>到宅服務一診難求</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                        本報專題報導指出，台灣邁入超高齡社會，失能個案逐年增加，但<strong>全台僅 163 位</strong>符合資格的牙醫實際執行到宅治療，不到總數百分之一。
+                        許多長輩苦等半年以上，連最基本的洗牙都遙不可及。
+                    </p>
+                    <div class="news-box">
+                        <p class="news-quote">「我們不願看到長輩受苦，特別對接了專業醫療團隊，把這項稀缺的服務直接帶進清福，讓長輩不用排隊、不用出門。」</p>
+                        <div class="news-source">— 致力於長輩生活品質的堅持</div>
+                    </div>
+                </div>
+                <div>
+                    <!-- 相關報導連結列表 -->
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                        <h4 style="color: var(--chingfu-red); margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+                            <i class="fa-regular fa-newspaper"></i> 媒體相關報導 (聯合報)
+                        </h4>
+                        <ul class="news-links">
+                            <li>
+                                <a href="https://udn.com/news/story/7266/9118155" target="_blank">
+                                    <i class="fa-solid fa-angle-right"></i> 到宅牙醫推動14年，全台僅163人投入
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://udn.com/news/story/7266/9118141" target="_blank">
+                                    <i class="fa-solid fa-angle-right"></i> 失能長輩出門難，洗牙、治療成奢求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://udn.com/news/story/7266/9118140" target="_blank">
+                                    <i class="fa-solid fa-angle-right"></i> 苦等半年排不到？到宅牙醫的困境與挑戰
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://udn.com/news/story/7266/9118157" target="_blank">
+                                    <i class="fa-solid fa-angle-right"></i> 白袍的重量：看見身心承受的痛苦
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: #777;">特約專業牙醫團隊 - 范綱信主任</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 品牌故事 (影片區 - 直接嵌入) -->
+    <section class="section-padding story-section">
+        <div class="container">
+            <div class="news-grid" style="grid-template-columns: 1fr 1fr; gap: 60px;">
+                <!-- 左邊影片：YouTube Embed -->
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/6lk_mOrGurw?rel=0" 
+                        title="白袍的重量" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <!-- 右邊故事文案 -->
+                <div class="story-text">
+                    <h3>《白袍的重量》</h3>
+                    <h2 class="section-title" style="font-size: 2rem;">14 年的堅持，只為那不到 1% 的守護</h2>
+                    <p style="font-size: 1.1rem; color: #555; margin-bottom: 20px;">
+                        「在診間之外，無數個不同面貌的醫療故事正悄然發生。」
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        我們深知許多**重症、臥床的長輩**，連張開嘴巴都有困難，更別說出門看牙。透過到宅牙醫服務，我們看見了長輩終於能舒服進食的笑容。
+                    </p>
+                    <p style="font-weight: bold; color: var(--chingfu-red);">
+                        雖然賺的錢沒有其他牙醫師多，但那份內心的快樂是無價的。這也是為什麼清福堅持引進這項服務的原因。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 服務方案 (價格錨點) -->
+    <section class="section-padding pricing-section">
+        <div class="container">
+            <h2 class="section-title">清福長照專屬・居家口腔清潔方案</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; color: rgba(255,255,255,0.8);">114年 12/1 起・暖心推廣價</p>
+            
+            <div class="price-card">
+                <div class="promo-badge">限時優惠</div>
+                <div class="price-original">原價 $2,000</div>
+                <div class="price-amount">$1,200</div>
+                <p style="color: #666; font-size: 0.9rem;">(包含車馬費、掛號費、診療費)</p>
+                
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>基本口腔檢查</strong> (牙周、蛀牙狀況)</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>專業洗牙 + 塗氟</strong> (預防牙周病)</li>
+                    <li><i class="fa-solid fa-file-invoice"></i> <strong>正規醫院開立收據</strong> (由特約醫療單位開立)</li>
+                    <li><i class="fa-solid fa-user-doctor"></i> <strong>專業醫師團隊執行</strong> (行動不便長輩專屬)</li>
+                </ul>
+                
+                <div style="background: #FFEBEE; padding: 15px; border-radius: 8px; font-size: 0.9rem; color: var(--chingfu-dark-red);">
+                    <i class="fa-solid fa-circle-info"></i> 洗牙以外的服務須優先諮詢醫師
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 預約表單 (CTA - 極簡卡片 + 轉跳按鈕) -->
+    <section id="booking" class="section-padding form-section">
+        <div class="container">
+            <h2 class="section-title">現在就報名，讓長輩舒服過好年</h2>
+            <p style="margin-bottom: 30px;">名額有限，每滿 6 人即刻派工</p>
+            
+            <div class="form-wrapper">
+                <i class="fa-solid fa-clipboard-list" style="font-size: 60px; color: var(--chingfu-red); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 15px; color: var(--chingfu-brown); font-size: 1.5rem;">線上預約報名</h3>
+                <p style="color: #666; margin-bottom: 30px; max-width: 600px;">
+                    為了提供最佳的填寫體驗，請點擊下方按鈕前往 Google 表單。<br>
+                    資料全程加密，請安心填寫。
+                </p>
+
+                <!-- 轉跳按鈕 (連結已設為你的表單) -->
+                <a href="https://forms.gle/8z8hSYRWttAmfLvT8" target="_blank" class="cta-button" style="padding: 20px 50px; font-size: 1.5rem; display: inline-flex; align-items: center; gap: 15px; box-shadow: 0 10px 25px rgba(211, 47, 47, 0.3);">
+                    <i class="fa-brands fa-google"></i> 前往填寫報名表
+                </a>
+            </div>
+
+            <div style="margin-top: 40px; color: #777;">
+                <p>清福長照集團-生活福祉課｜洽詢專線：02-86725678 #機構分機</p>
+                <p>© 2025 清福長照集團 版權所有</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
