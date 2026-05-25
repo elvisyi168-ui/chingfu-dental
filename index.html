@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>清福長照集團-生活福祉課 - 清福住民專屬牙醫洗牙服務</title>
-    <!-- Fonts -->
+    <title>清福長照集團-生活福祉课 - 清福住民專屬牙醫洗牙服務</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght=300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -53,22 +50,19 @@
 </head>
 <body class="bg-gray-50 text-chingfu-slate font-sans antialiased selection:bg-chingfu-red selection:text-white">
 
-    <!-- 1. HEADER (Top Navigation) -->
     <header class="sticky top-0 z-50 bg-white border-t-[6px] border-chingfu-red shadow-md transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Brand Identity -->
                 <div class="flex items-center space-x-3">
                     <div class="bg-chingfu-red text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
                         <i class="fa-solid fa-house-medical text-xl"></i>
                     </div>
                     <div>
                         <span class="block text-lg font-black tracking-wider text-chingfu-red">清福長照集團</span>
-                        <span class="block text-xs font-semibold text-chingfu-brown tracking-widest -mt-1">生活福祉課 ・ 住民專屬服務</span>
+                        <span class="block text-xs font-semibold text-chingfu-brown tracking-widest -mt-1">生活福祉课 ・ 住民專屬服務</span>
                     </div>
                 </div>
 
-                <!-- Desktop CTA Link -->
                 <div class="flex items-center space-x-4">
                     <a href="#eligibility" class="hidden md:inline-flex text-chingfu-brown hover:text-chingfu-red font-medium transition-colors duration-200">
                         資格評估
@@ -79,32 +73,27 @@
                     <a href="#faq" class="hidden md:inline-flex text-chingfu-brown hover:text-chingfu-red font-medium transition-colors duration-200">
                         常見問題
                     </a>
-                    <a href="#booking" class="bg-chingfu-red hover:bg-chingfu-darkRed text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
-                        立即預約
+                    <a href="#booking" class="bg-gray-400 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md cursor-not-allowed">
+                        本期額滿
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- 2. HERO SECTION (Dynamic & Captivating) -->
     <section class="relative bg-chingfu-darkBrown overflow-hidden">
-        <!-- Background Overlay Image with low opacity for high text contrast -->
         <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30" 
              style="background-image: url('https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
         </div>
-        <!-- Abstract design elements -->
         <div class="absolute -top-40 -right-40 w-96 h-96 bg-chingfu-red rounded-full filter blur-3xl opacity-20"></div>
         <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-chingfu-brown rounded-full filter blur-3xl opacity-30"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-center justify-center text-center">
-            <!-- Promo Badge -->
-            <div class="inline-flex items-center space-x-2 bg-chingfu-red text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full mb-8 uppercase tracking-widest animate-bounce shadow-lg">
-                <i class="fa-solid fa-fire-flame-simple text-amber-300"></i>
-                <span>本期加開 30 位名額 ・ 在院已安全服務 100+ 位長辈</span>
+            <div class="inline-flex items-center space-x-2 bg-gray-500 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full mb-8 uppercase tracking-widest shadow-lg">
+                <i class="fa-solid fa-circle-stop text-gray-300"></i>
+                <span>本期 30 位名額已全數額滿 ・ 在院已安全服務 100+ 位長辈</span>
             </div>
             
-            <!-- Main Catchy Title -->
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6 max-w-4xl tracking-tight">
                 機構長輩看牙外出太折騰？<br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-300">
@@ -112,17 +101,15 @@
                 </span>
             </h1>
             
-            <!-- Context Subtitle -->
             <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mb-12 font-light leading-relaxed">
                 專為清福長照集團住民設計的專業洗牙與口腔護理服務。<br class="hidden sm:inline">
                 <strong>只要是清福住民皆可享有！</strong>採取安全舒適的<strong>「坐姿」</strong>安穩洗牙，高效防嗆咳、家屬最放心。
             </p>
             
-            <!-- Action Trigger Buttons -->
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-                <a href="#booking" class="bg-chingfu-red hover:bg-chingfu-darkRed text-white text-lg font-bold px-10 py-4.5 rounded-full shadow-2xl hover:shadow-red-900/50 transform hover:-translate-y-1 transition-all duration-200 border border-red-500/20 text-center flex items-center justify-center space-x-2">
-                    <span>搶名額預約 $1,200 方案</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+                <a href="#booking" class="bg-gray-500 text-white text-lg font-bold px-10 py-4.5 rounded-full shadow-2xl cursor-not-allowed text-center flex items-center justify-center space-x-2">
+                    <span>本期預約已額滿</span>
+                    <i class="fa-solid fa-lock"></i>
                 </a>
                 <a href="#eligibility" class="bg-white/10 hover:bg-white/20 text-white hover:text-yellow-200 border border-white/30 text-lg font-bold px-10 py-4.5 rounded-full transition-all duration-200 text-center flex items-center justify-center space-x-2">
                     <i class="fa-solid fa-clipboard-check"></i>
@@ -130,15 +117,14 @@
                 </a>
             </div>
 
-            <!-- Trust Badges -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-8 border-t border-white/10 w-full max-w-5xl text-gray-300">
                 <div class="flex flex-col items-center">
                     <span class="text-3xl font-bold text-white mb-1">100+位</span>
                     <span class="text-xs">院內長輩已成功洗牙</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <span class="text-3xl font-bold text-white mb-1">限額30名</span>
-                    <span class="text-xs">本期特約先搶先贏</span>
+                    <span class="text-3xl font-bold text-red-400 mb-1">已額滿</span>
+                    <span class="text-xs">本期特約暫時關閉</span>
                 </div>
                 <div class="flex flex-col items-center">
                     <span class="text-3xl font-bold text-white mb-1">安全坐姿</span>
@@ -152,11 +138,9 @@
         </div>
     </section>
 
-    <!-- 3. PAIN POINTS & SCARCITY (新聞背書) -->
     <section class="py-20 bg-chingfu-lightRed">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Left Context Column -->
                 <div class="lg:col-span-7">
                     <div class="inline-block bg-chingfu-red/10 text-chingfu-red text-xs font-black px-3 py-1 rounded-md mb-4 tracking-wider">
                         高齡照護痛點新聞
@@ -172,7 +156,6 @@
                         許多家屬無奈透露，為長輩排一個公費洗牙、看牙常常要<strong>苦等半年以上</strong>。排不上隊、出門極度折騰，導致長輩牙周病加重、影響吞嚥甚至引發吸入性肺炎。
                     </p>
 
-                    <!-- Quote Highlight Card -->
                     <div class="bg-white p-6 rounded-2xl border-l-4 border-chingfu-red shadow-md mb-6">
                         <p class="text-chingfu-slate font-medium italic text-lg leading-relaxed">
                             「我們不忍看到清福長輩因牙痛與口腔發炎而受苦。生活福祉課排除萬難，特別引進極稀缺的特約專業牙醫團隊直接進駐清福各院區，讓所有清福住民省去漫長排隊，以最安全、防嗆咳的舒適坐姿，第一時間恢復口腔健康。」
@@ -184,7 +167,6 @@
                     </div>
                 </div>
 
-                <!-- Right Media & Links Column -->
                 <div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-xl border border-gray-100 relative overflow-hidden">
                     <div class="absolute -top-12 -right-12 w-24 h-24 bg-chingfu-red/5 rounded-full"></div>
                     
@@ -235,7 +217,6 @@
                         </li>
                     </ul>
 
-                    <!-- Doctor Info Card -->
                     <div class="mt-8 pt-6 border-t border-gray-100 flex items-center space-x-4">
                         <div class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-bold">
                             特約專業團隊
@@ -249,7 +230,6 @@
         </div>
     </section>
 
-    <!-- 4. COST & EFFORT COMPARISON (高說服力價值對比) -->
     <section id="comparison" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -259,7 +239,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
-                <!-- Traditional Clinic Visit Pain -->
                 <div class="bg-gray-50 rounded-3xl p-8 border border-gray-200 flex flex-col justify-between shadow-sm">
                     <div>
                         <div class="bg-gray-200 text-gray-700 w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
@@ -274,7 +253,7 @@
                                     <span class="font-bold text-gray-700 block">行政與請假繁雜</span>
                                     <span class="text-sm text-gray-500">家屬必須特地請假半天陪同、提前預約復康巴士或救護車，來回往返折騰非常耗時。</span>
                                 </div>
-                            </li>
+                            </li >
                             <li class="flex items-start">
                                 <span class="text-red-500 mr-3 mt-1"><i class="fa-solid fa-circle-xmark"></i></span>
                                 <div>
@@ -297,7 +276,6 @@
                     </div>
                 </div>
 
-                <!-- Chingfu At-Home Dentistry Solution -->
                 <div class="bg-chingfu-lightRed rounded-3xl p-8 border-2 border-chingfu-red flex flex-col justify-between shadow-xl relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-chingfu-red text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl">
                         住民專享
@@ -341,11 +319,9 @@
         </div>
     </section>
 
-    <!-- 5. BRAND STORY & VIDEO -->
     <section class="py-20 bg-chingfu-cream border-t border-b border-chingfu-red/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Video Section -->
                 <div class="lg:col-span-6">
                     <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-black">
                         <iframe 
@@ -359,7 +335,6 @@
                     </div>
                 </div>
                 
-                <!-- Story Narrative Section -->
                 <div class="lg:col-span-6">
                     <div class="inline-flex items-center space-x-2 bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
                         <i class="fa-solid fa-film"></i>
@@ -372,7 +347,7 @@
                     
                     <div class="space-y-4 text-gray-600 leading-relaxed">
                         <p>
-                            「在安靜 the 機構院區，往往伴隨著長輩最沈重的口腔不適與家屬的無奈。」
+                            「在安靜的機構院區，往往伴隨著長輩最沈重的口腔不適與家屬的無奈。」
                         </p>
                         <p>
                             清福體系內的住民長輩，不論是能自理行走、坐輪椅或臥床，因高齡、吞嚥神經退化，口水中的牙菌斑與牙結石一旦堆積，極易引發吸入性肺炎。要帶他們外出看牙，對家屬更是一場考驗。
@@ -389,7 +364,6 @@
         </div>
     </section>
 
-    <!-- 6. INTERACTIVE ELIGIBILITY CHECKER (住民專屬篩選器) -->
     <section id="eligibility" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -399,7 +373,6 @@
             </div>
 
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md border border-gray-100">
-                <!-- Progress Indicators -->
                 <div class="flex items-center justify-between mb-8 max-w-md mx-auto">
                     <div id="step-dot-1" class="w-10 h-10 rounded-full bg-chingfu-red text-white flex items-center justify-center font-bold transition-all duration-300">1</div>
                     <div class="flex-1 h-1 bg-gray-200 mx-2" id="step-bar-1"></div>
@@ -408,7 +381,6 @@
                     <div id="step-dot-3" class="w-10 h-10 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold transition-all duration-300">3</div>
                 </div>
 
-                <!-- Step 1 Content -->
                 <div id="checker-step-1" class="step-content">
                     <h3 class="text-xl font-bold text-gray-800 text-center mb-6">Q1: 長輩目前是否居住於「清福長照集團」院區之住民？</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -423,9 +395,8 @@
                     </div>
                 </div>
 
-                <!-- Step 2 Content (Hidden) -->
                 <div id="checker-step-2" class="step-content hidden">
-                    <h3 class="text-xl font-bold text-gray-800 text-center mb-6">Q2: 長輩目前的行动與坐姿起居配合能力？</h3>
+                    <h3 class="text-xl font-bold text-gray-800 text-center mb-6">Q2: 長輩目前的行動與坐姿起居配合能力？</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                         <button onclick="nextStep(2, 'walk')" class="p-5 bg-white border-2 border-gray-200 hover:border-chingfu-red rounded-2xl font-bold text-gray-700 hover:text-chingfu-red text-center transition-all duration-200">
                             <i class="fa-solid fa-person-walking text-3xl mb-3 block text-chingfu-brown"></i>
@@ -442,7 +413,6 @@
                     </div>
                 </div>
 
-                <!-- Step 3 Content (Hidden) -->
                 <div id="checker-step-3" class="step-content hidden">
                     <h3 class="text-xl font-bold text-gray-800 text-center mb-6">Q3: 長輩目前是否持有「身心障礙證明」或「重大傷病證明」？</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -457,7 +427,6 @@
                     </div>
                 </div>
 
-                <!-- Result Content (Hidden) -->
                 <div id="checker-result" class="step-content hidden text-center py-6">
                     <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full mb-6" id="result-icon-container">
                         <i id="result-icon" class="fa-solid fa-check text-2xl"></i>
@@ -467,8 +436,8 @@
                         長輩非常符合清福住民專屬的「特約口腔洗牙服務」！在熟悉的環境，由特約專業團隊以防嗆咳的「安穩坐姿」進行無痛洗牙。免除大排長龍與外出奔波，最速對接！
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                        <a href="#booking" id="result-action-btn" class="bg-chingfu-red hover:bg-chingfu-darkRed text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-200">
-                            立即前往預約
+                        <a href="#booking" id="result-action-btn" class="bg-gray-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-200 cursor-not-allowed">
+                            本期名額已滿
                         </a>
                         <button onclick="resetChecker()" class="text-gray-400 hover:text-gray-600 text-sm font-bold py-3">
                             重新檢測 <i class="fa-solid fa-rotate-right ml-1"></i>
@@ -479,7 +448,6 @@
         </div>
     </section>
 
-    <!-- 7. PRICING SCHEME (價格錨點) -->
     <section class="py-24 bg-chingfu-brown text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-radial opacity-10" style="background-image: radial-gradient(circle, var(--chingfu-red) 1px, transparent 1px); background-size: 20px 20px;"></div>
         
@@ -487,24 +455,22 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-red-400 font-bold text-xs uppercase tracking-widest bg-red-950/40 px-3 py-1.5 rounded-md">清福住民特約暖心價</span>
                 <h2 class="text-3xl sm:text-5xl font-black text-white mt-4">清福住民專屬・口腔洗牙方案</h2>
-                <p class="text-gray-300 mt-4 text-base sm:text-lg">生活福祉課特別對接，本期僅限 30 位名額，先搶先贏</p>
+                <p class="text-red-400 mt-4 text-base sm:text-lg font-bold">⚠️ 本期 30 位名額已全數額滿，生活福祉課正積極洽談下期時段</p>
             </div>
 
             <div class="max-w-xl mx-auto bg-white rounded-3xl text-chingfu-slate shadow-2xl border border-gray-100 relative overflow-hidden transform hover:scale-[1.01] transition-all duration-300">
-                <!-- Red top decorative line -->
-                <div class="h-2 bg-chingfu-red"></div>
+                <div class="h-2 bg-gray-400"></div>
                 
-                <!-- Ribbon Badge -->
-                <div class="absolute top-8 -right-14 bg-chingfu-red text-white text-xs font-black px-14 py-2 transform rotate-45 uppercase tracking-wider shadow">
-                    住民專享
+                <div class="absolute top-8 -right-14 bg-gray-500 text-white text-xs font-black px-14 py-2 transform rotate-45 uppercase tracking-wider shadow">
+                    已額滿
                 </div>
 
                 <div class="p-8 sm:p-12">
                     <div class="text-center mb-8">
                         <span class="block text-sm font-bold text-gray-400 line-through">外部到宅原價 $2,000 / 趟</span>
                         <div class="flex items-center justify-center mt-2">
-                            <span class="text-4xl font-extrabold text-chingfu-red">$</span>
-                            <span class="text-6xl sm:text-7xl font-black text-chingfu-red tracking-tighter">1,200</span>
+                            <span class="text-4xl font-extrabold text-gray-400">$</span>
+                            <span class="text-6xl sm:text-7xl font-black text-gray-400 tracking-tighter">1,200</span>
                         </div>
                         <span class="block text-xs text-gray-500 mt-2 font-semibold">
                             (出診一口價：包含特約醫師車馬費、掛號費、基礎耗材、診療費)
@@ -514,28 +480,28 @@
                     <div class="border-t border-b border-gray-100 py-6 my-6">
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <span class="bg-red-50 text-chingfu-red p-1 rounded-full mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
+                                <span class="text-emerald-600 mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
                                 <div>
                                     <strong class="text-gray-800">基本口腔健康精密評估</strong>
                                     <span class="block text-xs text-gray-500 mt-0.5">專業牙醫團隊檢查牙齦發炎程度、殘根與牙齒鬆動等。</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <span class="bg-red-50 text-chingfu-red p-1 rounded-full mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
+                                <span class="text-emerald-600 mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
                                 <div>
                                     <strong class="text-gray-800">專業超音波洗牙 + 塗氟防護</strong>
                                     <span class="block text-xs text-gray-500 mt-0.5">預防因結石滋生細菌導致的吸入性肺炎發生機率。</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <span class="bg-red-50 text-chingfu-red p-1 rounded-full mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
+                                <span class="text-emerald-600 mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
                                 <div>
                                     <strong class="text-gray-800">正規配合醫療院所開立收據</strong>
                                     <span class="block text-xs text-gray-500 mt-0.5">保障家屬權益，由配合之特約醫療單位開立正規健保/自費收據。</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <span class="bg-red-50 text-chingfu-red p-1 rounded-full mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
+                                <span class="text-emerald-600 mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
                                 <div>
                                     <strong class="text-gray-800">安全坐姿洗牙技術</strong>
                                     <span class="block text-xs text-gray-500 mt-0.5">不強求平躺，醫護團隊協助長輩採「安全坐姿」洗牙，高防嗆咳。</span>
@@ -544,14 +510,13 @@
                         </ul>
                     </div>
 
-                    <!-- Action Link -->
                     <div class="mt-8 text-center">
-                        <a href="#booking" class="block bg-chingfu-red hover:bg-chingfu-darkRed text-white text-lg font-bold py-4 rounded-xl shadow-lg hover:shadow-red-500/20 transition-all duration-200">
-                            搶訂限額 $1,200 方案
-                        </a>
-                        <div class="mt-4 inline-flex items-center space-x-2 text-xs text-chingfu-red font-semibold bg-chingfu-lightRed px-3 py-1.5 rounded-lg">
+                        <button class="block w-full bg-gray-400 text-white text-lg font-bold py-4 rounded-xl shadow-lg cursor-not-allowed">
+                            本期預約已額滿
+                        </button>
+                        <div class="mt-4 inline-flex items-center space-x-2 text-xs text-gray-500 font-semibold bg-gray-100 px-3 py-1.5 rounded-lg">
                             <i class="fa-solid fa-circle-info"></i>
-                            <span>本期 30 個名額稍縱即逝，請提早完成預約</span>
+                            <span>下期開放時間將另行公告，敬請期待</span>
                         </div>
                     </div>
                 </div>
@@ -559,7 +524,6 @@
         </div>
     </section>
 
-    <!-- 8. REVIEWS & TESTIMONIALS (家屬真實反饋 - 自然、長短交錯，無刻意業配感) -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -569,7 +533,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                <!-- Testimonial 1 (長 - 點出轉診大醫院與交通請假的崩潰痛點) -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-1 text-amber-400 mb-3">
@@ -590,7 +553,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 (中 - 點出失智抗拒與「沒洗到不收費」的定心丸) -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-1 text-amber-400 mb-3">
@@ -611,7 +573,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 (長 - 點出吸入性肺炎、防嗆咳、收據自退險補助細節) -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-1 text-amber-400 mb-3">
@@ -631,84 +592,19 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonial 4 (中 - 搶30名額心得與對亞東醫院排車慢的抱怨) -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            「以前光是要叫長照專車排亞東看診就要等一個多月，還要全家請假，真的很心累。這次看到限額30名，我第一時間就幫我媽報名了，自費在清福院區內洗一洗，1200元能省去一整天的奔波，真的非常划算，超級推薦！」
-                        </p>
-                    </div>
-                    <div class="mt-5 flex items-center space-x-3 pt-4 border-t border-gray-100">
-                        <div class="w-8 h-8 rounded-full bg-chingfu-lightRed text-chingfu-red flex items-center justify-center font-bold text-xs">
-                            陳
-                        </div>
-                        <div>
-                            <span class="block text-xs font-bold text-gray-800">住民家屬 陳先生</span>
-                            <span class="block text-[10px] text-gray-400">長輩高齡輪椅族</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 5 (短 - 輪椅長輩在機構直接洗的無痛體驗) -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            「以前帶媽媽去外面診所，因為她坐輪椅，有些診所門口有台階，進去真的很不方便。清福的特約團隊直接來房間，讓我媽坐在她原本的輪椅上直接洗，醫生很有經驗，動作流暢，媽媽完全沒感到害怕。」
-                        </p>
-                    </div>
-                    <div class="mt-5 flex items-center space-x-3 pt-4 border-t border-gray-100">
-                        <div class="w-8 h-8 rounded-full bg-chingfu-lightRed text-chingfu-red flex items-center justify-center font-bold text-xs">
-                            張
-                        </div>
-                        <div>
-                            <span class="block text-xs font-bold text-gray-800">住民家屬 張小姐</span>
-                            <span class="block text-[10px] text-gray-400">長輩需坐輪椅</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 6 (中長 - 剩沒幾顆牙，洗牙5分鐘高效率的解惑與感激) -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            「老伴牙齒剩不到幾顆，這次洗牙5分鐘就結束，本來還懷疑是不是洗得不仔細。後來問了福祉課，才知道是因為阿公牙齒少、結石不多，醫生為了保護阿公、怕他張嘴太累和嗆到，才會洗得又快又準。阿公洗完後下巴完全不酸，牙齒也變乾淨了，真的很專業！」
-                        </p>
-                    </div>
-                    <div class="mt-5 flex items-center space-x-3 pt-4 border-t border-gray-100">
-                        <div class="w-8 h-8 rounded-full bg-chingfu-lightRed text-chingfu-red flex items-center justify-center font-bold text-xs">
-                            何
-                        </div>
-                        <div>
-                            <span class="block text-xs font-bold text-gray-800">住民家屬 何媽媽</span>
-                            <span class="block text-[10px] text-gray-400">長輩真牙較少</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- 9. ACCORDION FAQS (疑慮解除與常見問題) -->
     <section id="faq" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-chingfu-red font-bold text-sm tracking-wider uppercase">專業Q&A・在院洗牙常見問題</span>
                 <h2 class="text-3xl font-black text-chingfu-brown mt-2">請家屬務必抽空閱讀，保障長輩權益</h2>
-                <p class="text-gray-500 mt-2">我們與專業特約團隊共同制定以下說明，讓您預約報名更放心。</p>
+                <p class="text-gray-500 mt-2">我們與專業特約團隊共同制定以下說明，讓您更放心。</p>
             </div>
 
             <div class="space-y-4">
-                <!-- FAQ item 1 (New Q1) -->
                 <div class="border border-gray-200 rounded-2xl overflow-hidden">
                     <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
                         <span>Q1: 既然平時照服員都有幫長輩刷牙，為什麼還需要自費洗牙？</span>
@@ -722,7 +618,6 @@
                     </div>
                 </div>
 
-                <!-- FAQ item 2 (New Q2) -->
                 <div class="border border-gray-200 rounded-2xl overflow-hidden">
                     <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
                         <span>Q2: 本服務可以開放給非清福體系的外部長輩預約嗎？</span>
@@ -731,12 +626,11 @@
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="p-6 text-gray-600 text-sm border-t border-gray-100 leading-relaxed space-y-2">
                             <p>本服務是生活福祉課特別為<strong>【清福長照集團在院住民】</strong>所對接爭取的專屬自費特惠專案。</p>
-                            <p>因特約專業牙醫出診團隊的時間與名額資源極度稀缺（每期限定僅 30 位），目前<strong>僅限清福體系在院住民預約（只要是清福住民，不挑身體狀態皆可報名）</strong>。暫不開放給一般家庭居家、或是非清福院區的其他機構長輩，敬請見諒。</p>
+                            <p>因特約專業牙醫出診團隊的時間與名額資源極度稀缺（每期限定僅 30 位），目前<strong>僅限清福體系在院住民預約（只要是清福住民，不挑身體狀況皆可報名）</strong>。暫不開放給一般家庭居家、或是非清福院區的其他機構長輩，敬請見諒。</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- FAQ item 3 (New Q3) -->
                 <div class="border border-gray-200 rounded-2xl overflow-hidden">
                     <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
                         <span>Q3: 住民洗牙自費項目（$1,200/次）包含哪些？健保沒有給付嗎？</span>
@@ -750,7 +644,6 @@
                     </div>
                 </div>
 
-                <!-- FAQ item 4 (New Q4) -->
                 <div class="border border-gray-200 rounded-2xl overflow-hidden">
                     <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
                         <span>Q4: 如果長輩當天鬧脾氣、不肯配合張嘴該怎麼辦？</span>
@@ -761,49 +654,8 @@
                             <p>部分高齡或失智長輩有時會因為緊張引發「咬合反射」（無意識咬緊），這是正常的生理現象。醫師現場會透過溫柔安撫、臉頰穴位放鬆等專業技巧嘗試引導張嘴。</p>
                             <div class="bg-red-50 p-4 rounded-xl border border-red-100">
                                 <span class="font-black text-chingfu-red block mb-1">🌟 【我們的安心承諾】</span>
-                                <p class="text-chingfu-darkRed">若醫師現場已盡全力嘗試，長輩仍因身體或嚴重情緒狀況無法配合張口，為了保護長輩的安全（避免強行瓣開導致受傷），我們當天將<strong>「完全不收取任何費用」</strong>，請家屬安心報名。</p>
+                                <p class="text-chingfu-darkRed">若醫師現場已盡全力嘗試，長輩仍因身體或嚴重情緒狀況無法配合張口，為了保護長輩的安全（避免強行瓣開導致受傷），我們當天將<strong>「完全不收取任何費用」</strong>，請家屬安心。</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ item 5 (New Q5) -->
-                <div class="border border-gray-200 rounded-2xl overflow-hidden">
-                    <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
-                        <span>Q5: 為什麼有些長輩洗牙 5-10 分鐘就結束了？是不是不仔細？</span>
-                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 text-gray-600 text-sm border-t border-gray-100 leading-relaxed space-y-2">
-                            <p class="font-bold text-chingfu-red">「洗得快，是對高齡長輩最好的保護。」</p>
-                            <p>如果長輩牙齒顆數較少（例如僅剩幾顆牙或部分真牙），或是平時機構照服員清潔得非常好，結石量極少，醫師便會以最快、最精準的速度完成。</p>
-                            <p>縮短洗牙時間能避免長輩張口過久導致顳顎關節（下巴）酸痛、減少長輩的體力消耗，並大幅降低清潔過程中的嗆咳風險。對高齡長輩而言，<strong>「高效率、低負擔」才是最頂級的醫療品質</strong>。</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ item 6 -->
-                <div class="border border-gray-200 rounded-2xl overflow-hidden">
-                    <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
-                        <span>Q6: 洗牙是一定要在床上平躺洗，還是可以坐著洗？</span>
-                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 text-gray-600 text-sm border-t border-gray-100 leading-relaxed">
-                            在臨床實際經驗中，讓失能長輩平躺洗牙極具危險性，因為大量的水份極易往喉嚨積聚引發誤吸和嗆咳。因此，特約出診醫師與護理人員<strong>皆會協助長輩採取最安全舒適的「坐姿」進行洗牙</strong>。臨床回饋證實，採取坐姿洗牙的嗆咳率極低，安全防護大幅升級！
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ item 7 -->
-                <div class="border border-gray-200 rounded-2xl overflow-hidden">
-                    <button class="faq-btn w-full px-6 py-5 bg-gray-50 flex items-center justify-between text-left font-bold text-gray-800 hover:bg-chingfu-lightRed transition-colors duration-200 focus:outline-none">
-                        <span>Q7: 每次出診洗牙的醫師，一定會是范綱信主任本人嗎？</span>
-                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 text-gray-600 text-sm border-t border-gray-100 leading-relaxed">
-                            清福特約洗牙服務是由<strong>「范綱信主任所帶領的到宅專業特約醫療團隊」</strong>負責。為確保各院區與房型的排程效率，每次出診將由該團隊中符合資格、且經過嚴格培訓的「合格牙醫師與護理團隊」前往，恕無法指定范綱信主任個人親自出診，特此向家屬說明。
                         </div>
                     </div>
                 </div>
@@ -811,108 +663,79 @@
         </div>
     </section>
 
-    <!-- 10. BOOKING CTA BLOCK -->
     <section id="booking" class="py-24 bg-gray-100 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Urgent Counter/Indicator Card (強化名額警示與累積百位支持) -->
-            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-12 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 shadow-sm animate-pulse">
+            <div class="bg-red-50 border border-red-200 rounded-2xl p-6 mb-12 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 shadow-sm">
                 <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-hourglass-half"></i>
+                    <div class="w-12 h-12 rounded-full bg-red-100 text-chingfu-red flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-circle-xmark"></i>
                     </div>
                     <div>
-                        <span class="block text-sm font-black text-amber-900">本期特約住民派工進度 (限額 30 位)</span>
-                        <span class="block text-xs text-amber-700">清福在院長輩專屬，本期僅加開 30 席，額滿即止！</span>
+                        <span class="block text-sm font-black text-red-900">本期特約住民派工進度 (限額 30 位)</span>
+                        <span class="block text-xs text-red-700">非常感謝支持！本期 30 席名額已全數登記額滿。</span>
                     </div>
                 </div>
                 <div class="flex items-center space-x-2">
                     <div class="text-right">
-                        <span class="block text-xs text-amber-700 font-semibold">本期剩餘名額</span>
-                        <span class="block text-xl font-black text-chingfu-red">僅剩 9 席！</span>
+                        <span class="block text-xs text-red-700 font-semibold">本期剩餘名額</span>
+                        <span class="block text-xl font-black text-chingfu-red">剩餘 0 席</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Booking Center Card -->
             <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100 text-center">
-                <div class="w-20 h-20 bg-chingfu-lightRed text-chingfu-red rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
-                    <i class="fa-solid fa-clipboard-list text-3xl"></i>
+                <div class="w-20 h-20 bg-gray-100 text-gray-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                    <i class="fa-solid fa-lock text-3xl"></i>
                 </div>
                 
-                <h3 class="text-2xl sm:text-3xl font-black text-chingfu-brown mb-4">線上預約報名與安全宣告</h3>
+                <h3 class="text-2xl sm:text-3xl font-black text-gray-400 mb-4">線上預約暫時關閉</h3>
                 <p class="text-gray-500 max-w-xl mx-auto mb-8 leading-relaxed">
-                    請家屬在預約前務必詳細閱讀下方的「報名安全須知」。勾選同意並確認長輩身分後，即可解鎖前往填寫 Google 預約表單。
+                    本期 30 位特約名額已滿，Google 報名表單已暫時關閉。若長輩有緊急口腔檢查需求，請洽各院區生活福祉課人員，或撥打下方專線。
                 </p>
 
-                <!-- Interactive Notice Checklist Block -->
-                <div class="max-w-2xl mx-auto text-left bg-gray-50 border border-gray-200 p-6 rounded-2xl mb-8">
-                    <h4 class="text-sm font-black text-chingfu-red flex items-center mb-3">
-                        <i class="fa-solid fa-triangle-exclamation mr-2"></i>
-                        <span>報名安全須知與家屬宣告（請詳細閱讀）</span>
+                <div class="max-w-2xl mx-auto text-left bg-gray-50 border border-gray-200 p-6 rounded-2xl mb-8 opacity-60">
+                    <h4 class="text-sm font-black text-gray-500 flex items-center mb-3">
+                        <i class="fa-solid fa-circle-info mr-2"></i>
+                        <span>滿額公告與後續說明</span>
                     </h4>
-                    <div class="text-xs text-gray-600 space-y-2 mb-6 max-h-48 overflow-y-auto border-b border-gray-200 pb-4">
-                        <p class="font-bold text-gray-700">1. 安全第一（安全坐姿洗牙）：</p>
-                        <p>為避免因躺姿而導致水分蓄積於喉部引發嗆咳、嗆噎，洗牙時，出診醫療團隊皆會協助長輩採取「安全坐姿」進行清潔，防嗆咳效果極佳，請家屬知悉並放心。</p>
-                        
-                        <p class="font-bold text-gray-700">2. 特約團隊出診制與對象限制：</p>
-                        <p>本自費特約服務由范綱信主任帶領之專業到宅牙醫團隊負責。本專案【僅限清福體系住民長輩（不限身體狀況，只要是住民皆可預約）】。實際出診醫師由團隊依排程派遣合格專業牙醫師出任，恕無法指定特定醫師（如范主任本人）。</p>
-                        
-                        <p class="font-bold text-gray-700">3. 安心承諾（未洗到不收費）：</p>
-                        <p>若長輩現場極度抗拒、出現嚴重的反射咬合不肯張口，在醫師嘗試放鬆技巧仍無效果下，為確保長輩口唇安全（不強行瓣開），該趟服務「完全不收取任何費用」。</p>
-                        
-                        <p class="font-bold text-gray-700">4. 效率保障與時間落差：</p>
-                        <p>若長輩口腔餘牙數較少，或日常清潔十分完善導致結石量極少，醫師會以最精確高效率（5-10分鐘）完成洗牙，此為保護高齡住民顳顎關節酸痛與體力流失的最頂級醫療品質。</p>
+                    <div class="text-xs text-gray-600 space-y-2 mb-4 leading-relaxed">
+                        <p>1. 生活福祉課目前正在與特約醫療團隊盤點在院排程，若有加開名額，將第一時間於各院區家屬通知群組公告。</p>
+                        <p>2. 已成功提交表單的家屬，服務福祉課與醫護團隊將依序與您電話確認出診時間，請保持手機暢通。</p>
                     </div>
-
-                    <!-- Interactive Checkbox -->
-                    <label class="flex items-start space-x-3 cursor-pointer select-none">
-                        <input type="checkbox" id="agree-checkbox" onchange="toggleSubmitButton()" class="mt-1 h-5 w-5 rounded border-gray-300 text-chingfu-red focus:ring-chingfu-red">
-                        <span class="text-xs sm:text-sm text-gray-700 font-bold leading-relaxed">
-                            我已閱讀並完全理解上述洗牙須知（包含確認長輩為清福體系住民、沒洗到不收費、為防嗆咳採坐姿洗牙、團隊醫師隨機派任出診、每位長輩洗牙時間依個案狀況而異等說明），並同意為長輩報名。
-                        </span>
-                    </label>
                 </div>
 
-                <!-- Interactive Progress indicator -->
                 <div class="max-w-md mx-auto mb-10 bg-gray-50 p-4 rounded-xl border border-gray-100">
                     <div class="flex justify-between text-xs text-gray-500 font-bold mb-1">
-                        <span>本期 30 名預約搶位統計</span>
-                        <span>僅限清福在院長輩報名</span>
+                        <span>本期 30 名預約登記統計</span>
+                        <span>登記進度 100%</span>
                     </div>
                     <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
-                        <!-- Progressing to 70% to match 21 registered out of 30 -->
-                        <div class="bg-chingfu-red h-full rounded-full" style="width: 100%"></div>
+                        <div class="bg-red-500 h-full rounded-full" style="width: 100%"></div>
                     </div>
                     <div class="text-right text-[10px] text-chingfu-red font-black mt-1">目前 30 席已滿 / 剩餘 0 席 (在院已安全服務破百位長輩)</div>
                 </div>
 
-                <!-- CTA Trigger Redirect to Google Form (Initially Disabled style until checked) -->
-                <a href="https://forms.gle/8z8hSYRWttAmfLvT8" target="_blank" id="submit-btn" class="inline-flex items-center justify-center space-x-3 bg-chingfu-red hover:bg-chingfu-darkRed text-white text-xl font-black px-12 py-5 rounded-full shadow-xl hover:shadow-red-600/30 transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto opacity-50 pointer-events-none">
-                    <i class="fa-brands fa-google"></i>
-                    <span>點我前往 Google 表單填寫</span>
-                </a>
-                
-                <p class="text-xs text-gray-400 mt-4"><i class="fa-solid fa-lock"></i> 本宣告具有保障家屬與醫療機構權益效益，填表資料全程 SSL 安全加密保護</p>
+                <button id="submit-btn" class="inline-flex items-center justify-center space-x-3 bg-gray-400 text-white text-xl font-black px-12 py-5 rounded-full shadow-md w-full sm:w-auto cursor-not-allowed">
+                    <i class="fa-solid fa-ban"></i>
+                    <span>本期額滿・表單關閉中</span>
+                </button>
             </div>
 
-            <!-- Footer Contact Details -->
             <div class="text-center mt-16 text-gray-500 text-sm space-y-2">
                 <p class="font-bold text-chingfu-brown text-base">清福長照集團 - 生活福祉課</p>
                 <p class="flex items-center justify-center space-x-2">
                     <i class="fa-solid fa-phone text-chingfu-red"></i>
-                    <span>洽詢與預約專線：<strong>02-86725678</strong></span>
+                    <span>洽詢專線：<strong>02-86725678</strong></span>
                 </p>
                 <p class="text-xs text-gray-400 mt-4">© 2026 清福長照集團 生活福祉課 版權所有。All Rights Reserved.</p>
             </div>
         </div>
     </section>
 
-    <!-- Floating Back to Top Button -->
     <button id="back-to-top" class="fixed bottom-6 right-6 bg-chingfu-brown hover:bg-chingfu-red text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 transition-all duration-300 hover:-translate-y-1 z-50 pointer-events-none">
         <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-    <!-- INTERACTIVE SCRIPTS -->
     <script>
         // 1. Accordion logic
         const faqBtns = document.querySelectorAll('.faq-btn');
@@ -921,12 +744,10 @@
                 const content = btn.nextElementSibling;
                 const icon = btn.querySelector('i');
                 
-                // Toggle current item
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
                     icon.style.transform = 'rotate(0deg)';
                 } else {
-                    // Close all others first
                     document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
                     document.querySelectorAll('.faq-btn i').forEach(i => i.style.transform = 'rotate(0deg)');
                     
@@ -937,11 +758,7 @@
         });
 
         // 2. Interactive Eligibility Checker logic
-        let answers = {
-            s1: null,
-            s2: null,
-            s3: null
-        };
+        let answers = { s1: null, s2: null, s3: null };
 
         function nextStep(currentStep, answer) {
             if (currentStep === 1) {
@@ -979,7 +796,6 @@
             const iconContainer = document.getElementById('result-icon-container');
             const icon = document.getElementById('result-icon');
             
-            // Hide all active step contents just in case
             document.getElementById('checker-step-1').classList.add('hidden');
             document.getElementById('checker-step-2').classList.add('hidden');
             document.getElementById('checker-step-3').classList.add('hidden');
@@ -992,34 +808,28 @@
                 resultDesc.innerText = "非常抱歉！本特約洗牙專案為清福生活福祉課特別為【清福體系內在院住民】爭取的專屬福利。目前特約團隊資源緊縮（每期僅限 30 位名額），暫時無法開放外部居家、或是非清福體系之其他機構長輩預約，敬請見諒。";
                 actionBtn.classList.add('hidden');
                 
-                // Style icon as Warning
                 iconContainer.className = "inline-flex items-center justify-center w-16 h-16 bg-red-100 text-chingfu-red rounded-full mb-6";
                 icon.className = "fa-solid fa-triangle-exclamation text-2xl";
 
-                // Reset progress indicators to gray for visual consistency
                 document.getElementById('step-bar-1').classList.replace('bg-chingfu-red', 'bg-gray-200');
                 document.getElementById('step-dot-2').classList.replace('bg-chingfu-red', 'bg-gray-200');
                 document.getElementById('step-dot-2').classList.replace('text-white', 'text-gray-500');
             } else {
-                resultTitle.innerText = "評估完成：完全符合！";
-                resultTitle.className = "text-2xl font-black text-emerald-600 mb-3";
-                resultDesc.innerText = "長輩非常符合清福住民專屬的「特約口腔洗牙服務」！不論長輩身體狀況、起居能力如何，只要是清福住民皆可享有服務。特約醫療團隊將會攜帶精密手提式設備直接前往長輩機構，並以安全防嗆咳的「坐姿」進行清潔。本期限定 30 位名額稍縱即逝，請立即點選下方進行預約！";
+                resultTitle.innerText = "評估完成：長輩符合資格（本期額滿）";
+                resultTitle.className = "text-2xl font-black text-amber-600 mb-3";
+                resultDesc.innerText = "長輩條件符合清福住民專屬資格！但由於目前本期 30 個特約洗牙名額已全數額滿，線上表單已暫時關閉。福祉課正在積極與醫療團隊協調下期時段，若有最新消息將第一時間於群組通知您！";
                 actionBtn.classList.remove('hidden');
                 
-                // Style icon as Success
-                iconContainer.className = "inline-flex items-center justify-center w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full mb-6";
-                icon.className = "fa-solid fa-check text-2xl";
+                iconContainer.className = "inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-800 rounded-full mb-6";
+                icon.className = "fa-solid fa-clock text-2xl";
             }
         }
 
         function resetChecker() {
             answers = { s1: null, s2: null, s3: null };
-            
-            // Show first step
             document.getElementById('checker-result').classList.add('hidden');
             document.getElementById('checker-step-1').classList.remove('hidden');
             
-            // Reset indicators
             document.getElementById('step-dot-2').classList.replace('bg-chingfu-red', 'bg-gray-200');
             document.getElementById('step-dot-2').classList.replace('text-white', 'text-gray-500');
             document.getElementById('step-dot-3').classList.replace('bg-chingfu-red', 'bg-gray-200');
@@ -1028,20 +838,7 @@
             document.getElementById('step-bar-2').classList.replace('bg-chingfu-red', 'bg-gray-200');
         }
 
-        // 3. Interactive Checklist gate for booking link
-        function toggleSubmitButton() {
-            const checkbox = document.getElementById('agree-checkbox');
-            const submitBtn = document.getElementById('submit-btn');
-            if (checkbox.checked) {
-                submitBtn.classList.remove('opacity-50', 'pointer-events-none');
-                submitBtn.classList.add('opacity-100');
-            } else {
-                submitBtn.classList.add('opacity-50', 'pointer-events-none');
-                submitBtn.classList.remove('opacity-100');
-            }
-        }
-
-        // 4. Back to Top Smooth Scroll
+        // 3. Back to Top Smooth Scroll
         const backToTopBtn = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
