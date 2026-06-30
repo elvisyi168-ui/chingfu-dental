@@ -980,17 +980,16 @@
                 submitBtn.classList.remove('bg-gray-400', 'cursor-not-allowed');
                 submitBtn.classList.add('bg-chingfu-red', 'hover:bg-chingfu-darkRed');
                 submitBtnText.innerText = "前往填寫預約表單";
-                submitBtn.href = "#"; // 在此替換為實際的 Google 表單連結
-                submitBtn.onclick = function(e) { 
-                    e.preventDefault();
-                    alert('即將前往預約表單填寫資料 (此處可替換為實際表單連結)'); 
-                };
+                submitBtn.href = "https://forms.gle/xCEtWmiwMnTYZBWq8"; 
+                submitBtn.target = "_blank";
+                submitBtn.onclick = null;
             } else {
                 // Disabled state
                 submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
                 submitBtn.classList.remove('bg-chingfu-red', 'hover:bg-chingfu-darkRed');
                 submitBtnText.innerText = "請先勾選同意上述說明";
                 submitBtn.href = "javascript:void(0);";
+                submitBtn.removeAttribute('target');
                 submitBtn.onclick = null;
             }
         });
