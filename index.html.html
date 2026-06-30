@@ -73,8 +73,8 @@
                     <a href="#faq" class="hidden md:inline-flex text-chingfu-brown hover:text-chingfu-red font-medium transition-colors duration-200">
                         常見問題
                     </a>
-                    <a href="#booking" class="bg-gray-400 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md cursor-not-allowed">
-                        本期額滿
+                    <a href="#booking" class="bg-chingfu-red hover:bg-chingfu-darkRed transition-colors duration-200 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md">
+                        立即預約
                     </a>
                 </div>
             </div>
@@ -89,9 +89,9 @@
         <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-chingfu-brown rounded-full filter blur-3xl opacity-30"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-center justify-center text-center">
-            <div class="inline-flex items-center space-x-2 bg-gray-600 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full mb-8 uppercase tracking-widest shadow-lg">
-                <i class="fa-solid fa-circle-xmark text-red-400"></i>
-                <span>本期 30 位名額已全數額滿 ・ 暫時關閉線上報名</span>
+            <div class="inline-flex items-center space-x-2 bg-white/20 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full mb-8 uppercase tracking-widest shadow-lg border border-white/30">
+                <i class="fa-solid fa-circle-check text-green-400"></i>
+                <span>本期特約 30 位名額・現正熱烈開放報名中</span>
             </div>
             
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6 max-w-4xl tracking-tight">
@@ -107,11 +107,11 @@
             </p>
             
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-                <a href="#booking" class="bg-gray-500 text-white text-lg font-bold px-10 py-4.5 rounded-full shadow-2xl cursor-not-allowed text-center flex items-center justify-center space-x-2 opacity-80">
-                    <span>本期 30 位名額已滿</span>
-                    <i class="fa-solid fa-lock"></i>
+                <a href="#booking" class="bg-chingfu-red hover:bg-red-700 text-white text-lg font-bold px-10 py-4 rounded-full shadow-2xl transition-all duration-200 text-center flex items-center justify-center space-x-2">
+                    <span>立即線上預約報名</span>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
-                <a href="#eligibility" class="bg-white/10 hover:bg-white/20 text-white hover:text-yellow-200 border border-white/30 text-lg font-bold px-10 py-4.5 rounded-full transition-all duration-200 text-center flex items-center justify-center space-x-2">
+                <a href="#eligibility" class="bg-white/10 hover:bg-white/20 text-white hover:text-yellow-200 border border-white/30 text-lg font-bold px-10 py-4 rounded-full transition-all duration-200 text-center flex items-center justify-center space-x-2">
                     <i class="fa-solid fa-clipboard-check"></i>
                     <span>30秒住民資格檢測</span>
                 </a>
@@ -123,8 +123,8 @@
                     <span class="text-xs">院內長輩已成功洗牙</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <span class="text-3xl font-bold text-gray-400 mb-1">已額滿</span>
-                    <span class="text-xs">本期特約30名已滿</span>
+                    <span class="text-3xl font-bold text-white mb-1">30名</span>
+                    <span class="text-xs">本期特約限量名額</span>
                 </div>
                 <div class="flex flex-col items-center">
                     <span class="text-3xl font-bold text-white mb-1">安全坐姿</span>
@@ -138,6 +138,7 @@
         </div>
     </section>
 
+    <!-- (其餘區段如新聞媒體報導、服務對比、紀錄片均未修改) -->
     <section class="py-20 bg-chingfu-lightRed">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -431,13 +432,13 @@
                     <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full mb-6" id="result-icon-container">
                         <i id="result-icon" class="fa-solid fa-check text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-black text-gray-800 mb-3" id="result-title">評估完成：完全符合！</h3>
+                    <h3 class="text-2xl font-black text-emerald-600 mb-3" id="result-title">評估完成：完全符合！</h3>
                     <p class="text-gray-600 max-w-md mx-auto mb-8" id="result-desc">
                         長輩非常符合清福住民專屬的「特約口腔洗牙服務」！在熟悉的環境，由特約專業團隊以防嗆咳的「安穩坐姿」進行無痛洗牙。免除大排長龍與外出奔波，最速對接！
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                        <a href="#booking" id="result-action-btn" class="bg-gray-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg cursor-not-allowed opacity-80">
-                            本期額滿暫關閉
+                        <a href="#booking" id="result-action-btn" class="bg-chingfu-red hover:bg-chingfu-darkRed text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-colors duration-200">
+                            立即前往報名
                         </a>
                         <button onclick="resetChecker()" class="text-gray-400 hover:text-gray-600 text-sm font-bold py-3">
                             重新檢測 <i class="fa-solid fa-rotate-right ml-1"></i>
@@ -455,14 +456,14 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-red-400 font-bold text-xs uppercase tracking-widest bg-red-950/40 px-3 py-1.5 rounded-md">清福住民特約暖心價</span>
                 <h2 class="text-3xl sm:text-5xl font-black text-white mt-4">清福住民專屬・口腔洗牙方案</h2>
-                <p class="text-gray-300 mt-4 text-base sm:text-lg">生活福祉課特別對接，本期 30 位名額已全數額滿</p>
+                <p class="text-gray-300 mt-4 text-base sm:text-lg">生活福祉課特別對接，本期限額 30 位熱烈報名中</p>
             </div>
 
             <div class="max-w-xl mx-auto bg-white rounded-3xl text-chingfu-slate shadow-2xl border border-gray-100 relative overflow-hidden transform hover:scale-[1.01] transition-all duration-300">
                 <div class="h-2 bg-chingfu-red"></div>
                 
-                <div class="absolute top-8 -right-14 bg-gray-500 text-white text-xs font-black px-14 py-2 transform rotate-45 uppercase tracking-wider shadow">
-                    已額滿
+                <div class="absolute top-8 -right-14 bg-amber-400 text-amber-900 text-xs font-black px-14 py-2 transform rotate-45 uppercase tracking-wider shadow">
+                    熱烈報名中
                 </div>
 
                 <div class="p-8 sm:p-12">
@@ -470,7 +471,7 @@
                         <span class="block text-sm font-bold text-gray-400 line-through">外部到宅原價 $2,000 / 趟</span>
                         <div class="flex items-center justify-center mt-2">
                             <span class="text-4xl font-extrabold text-gray-400">$</span>
-                            <span class="text-6xl sm:text-7xl font-black text-gray-400 tracking-tighter">1,200</span>
+                            <span class="text-6xl sm:text-7xl font-black text-chingfu-red tracking-tighter">1,200</span>
                         </div>
                         <span class="block text-xs text-gray-500 mt-2 font-semibold">
                             (出診一口價：包含特約醫師車馬費、掛號費、基礎耗材、診療費)
@@ -482,7 +483,6 @@
                             <li class="flex items-start">
                                 <span class="bg-red-50 text-chingfu-red p-1 rounded-full mr-4 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span>
                                 <div>
-                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'></svg>" alt="" class="hidden">
                                     <strong class="text-gray-800">基本口腔健康精密評估</strong>
                                     <span class="block text-xs text-gray-500 mt-0.5">專業牙醫團隊檢查牙齦發炎程度、殘根與牙齒鬆動等。</span>
                                 </div>
@@ -512,12 +512,12 @@
                     </div>
 
                     <div class="mt-8 text-center">
-                        <a href="#booking" class="block bg-gray-400 text-white text-lg font-bold py-4 rounded-xl shadow-lg cursor-not-allowed">
-                            本期 30 席名額已滿
+                        <a href="#booking" class="block bg-chingfu-red hover:bg-chingfu-darkRed transition-colors duration-200 text-white text-lg font-bold py-4 rounded-xl shadow-lg">
+                            立即搶先預約 (限額 30 席)
                         </a>
                         <div class="mt-4 inline-flex items-center space-x-2 text-xs text-gray-500 font-semibold bg-gray-100 px-3 py-1.5 rounded-lg">
                             <i class="fa-solid fa-circle-info"></i>
-                            <span>本期名額已全數分配完畢，暫不接受預約</span>
+                            <span>名額有限，依表單送出順序為準，額滿即關閉表單</span>
                         </div>
                     </div>
                 </div>
@@ -525,6 +525,7 @@
         </div>
     </section>
 
+    <!-- (真實家屬好評、FAQ區段皆未修改) -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -762,53 +763,54 @@
         </div>
     </section>
 
+    <!-- 已修改：報名表單區塊開啟互動功能 -->
     <section id="booking" class="py-24 bg-gray-100 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-50 border border-gray-300 rounded-2xl p-6 mb-12 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 shadow-sm">
                 <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-hourglass-end"></i>
+                    <div class="w-12 h-12 rounded-full bg-red-100 text-chingfu-red flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-hourglass-half"></i>
                     </div>
                     <div>
                         <span class="block text-sm font-black text-gray-800">本期特約住民派工進度 (限額 30 位)</span>
-                        <span class="block text-xs text-gray-500">清福在院長輩專屬特約服務，本期名額已全數分配完畢。</span>
+                        <span class="block text-xs text-gray-500">清福在院長輩專屬特約服務，名額有限，額滿將自動關閉。</span>
                     </div>
                 </div>
                 <div class="flex items-center space-x-2">
                     <div class="text-right">
-                        <span class="block text-xs text-gray-500 font-semibold">本期剩餘名額</span>
-                        <span class="block text-xl font-black text-gray-500">已全數額滿</span>
+                        <span class="block text-xs text-gray-500 font-semibold">本期特約名額</span>
+                        <span class="block text-xl font-black text-chingfu-red">30 位</span>
                     </div>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100 text-center">
-                <div class="w-20 h-20 bg-gray-100 text-gray-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
-                    <i class="fa-solid fa-lock text-3xl"></i>
+                <div class="w-20 h-20 bg-red-50 text-chingfu-red rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                    <i class="fa-solid fa-file-signature text-3xl"></i>
                 </div>
                 
-                <h3 class="text-2xl sm:text-3xl font-black text-chingfu-brown mb-4">線上預約報名暫時關閉</h3>
+                <h3 class="text-2xl sm:text-3xl font-black text-chingfu-brown mb-4">線上預約報名表單</h3>
                 <p class="text-gray-500 max-w-xl mx-auto mb-8 leading-relaxed">
-                    感謝家屬熱烈支持，本期 30 位自費特約名額已全數額滿。為確保現有預約長輩的醫療出診品質，系統已暫時關閉 Google 表單填寫通道。
+                    請家屬詳細閱讀以下說明並勾選同意後，點擊下方按鈕前往填寫預約表單。我們將依據表單送出時間依序安排特約團隊出診。
                 </p>
 
                 <div class="max-w-2xl mx-auto text-left bg-gray-50 border border-gray-200 p-6 rounded-2xl mb-8">
                     <h4 class="text-sm font-black text-gray-500 flex items-center mb-3">
                         <i class="fa-solid fa-circle-info mr-2"></i>
-                        <span>額滿與後續處理宣告</span>
+                        <span>預約與出診流程說明</span>
                     </h4>
                     <div class="text-xs text-gray-600 space-y-2 mb-6 max-h-48 overflow-y-auto border-b border-gray-200 pb-4">
-                        <p class="font-bold text-gray-700">1. 現有預約排程：</p>
-                        <p>生活福祉課目前正加速與范綱信主任特約團隊對接已成功報名的 30 位長輩出診時間，排定後將由各院區社工或照護團隊個別通知家屬。</p>
+                        <p class="font-bold text-gray-700">1. 填寫表單排程：</p>
+                        <p>請家屬填寫表單提供長輩基本資料，生活福祉課將加速與范綱信主任特約團隊對接出診時間。</p>
                         
-                        <p class="font-bold text-gray-700">2. 下期開放資訊：</p>
-                        <p>由於到宅牙醫資源極度稀缺，生活福祉課將視本期執行成效與團隊動能，積極爭取下一期加開名額。最新消息將首發於清福長報與官方通知。</p>
+                        <p class="font-bold text-gray-700 mt-2">2. 等候通知：</p>
+                        <p>排定後將由各院區社工或照護團隊個別通知家屬確切洗牙日期與時間。</p>
                     </div>
 
-                    <label class="flex items-start space-x-3 cursor-not-allowed select-none opacity-60">
-                        <input type="checkbox" id="agree-checkbox" disabled class="mt-1 h-5 w-5 rounded border-gray-300 text-gray-400 focus:ring-gray-400">
-                        <span class="text-xs sm:text-sm text-gray-500 font-bold leading-relaxed">
-                            本期已額滿，表單鎖定中。您可留意集團後續公告以獲取下一期特約洗牙的加開資訊。
+                    <label class="flex items-start space-x-3 cursor-pointer select-none">
+                        <input type="checkbox" id="agree-checkbox" class="mt-1 h-5 w-5 rounded border-gray-300 text-chingfu-red focus:ring-chingfu-red">
+                        <span class="text-xs sm:text-sm text-gray-700 font-bold leading-relaxed">
+                            我已詳閱上方說明，並同意為清福在院長輩報名自費 $1,200 之特約洗牙服務。
                         </span>
                     </label>
                 </div>
@@ -819,17 +821,17 @@
                         <span>僅限清福在院長輩報名</span>
                     </div>
                     <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
-                        <div class="bg-gray-400 h-full rounded-full" style="width: 100%"></div>
+                        <div class="bg-chingfu-red h-full rounded-full" style="width: 15%"></div>
                     </div>
-                    <div class="text-right text-[10px] text-gray-500 font-black mt-1">目前 30 席已滿 / 剩餘 0 席 (在院已安全服務破百位長輩)</div>
+                    <div class="text-right text-[10px] text-gray-500 font-black mt-1">目前開放報名中 / 限量 30 席 (在院已安全服務破百位長輩)</div>
                 </div>
 
-                <a href="javascript:void(0);" id="submit-btn" class="inline-flex items-center justify-center space-x-3 bg-gray-400 text-white text-xl font-black px-12 py-5 rounded-full shadow-md w-full sm:w-auto cursor-not-allowed opacity-70">
-                    <i class="fa-solid fa-lock"></i>
-                    <span>本期已額滿 ・ 暫時關閉填寫</span>
+                <a href="javascript:void(0);" id="submit-btn" class="inline-flex items-center justify-center space-x-3 bg-gray-400 text-white text-xl font-black px-12 py-5 rounded-full shadow-md w-full sm:w-auto cursor-not-allowed transition-colors duration-300">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span id="submit-btn-text">請先勾選同意上述說明</span>
                 </a>
                 
-                <p class="text-xs text-gray-400 mt-4"><i class="fa-solid fa-lock"></i> 預約通道已關閉，若有緊急口腔醫療需求請洽各院區護理站</p>
+                <p class="text-xs text-gray-400 mt-4"><i class="fa-solid fa-shield-halved"></i> 您的資料僅供本次醫療排程使用，絕不外流。若有緊急口腔醫療需求請洽各院區護理站。</p>
             </div>
 
             <div class="text-center mt-16 text-gray-500 text-sm space-y-2">
@@ -937,7 +939,12 @@
             } else {
                 resultTitle.innerText = "評估完成：完全符合！";
                 resultTitle.className = "text-2xl font-black text-emerald-600 mb-3";
-                resultDesc.innerText = "長輩非常符合清福住民專屬的「特約口腔洗牙服務」！但因本期 30 位名額已全數額滿，線上預約表單已暫時關閉通道。福祉課將全力做好本期出診服務，並積極規劃下一期加開時段，敬請留意最新公告！";
+                // 這裡的文字改為正常報名狀態的敘述
+                resultDesc.innerText = "長輩非常符合清福住民專屬的「特約口腔洗牙服務」！在熟悉的環境，由特約專業團隊以防嗆咳的「安穩坐姿」進行無痛洗牙。免除大排長龍與外出奔波，最速對接！";
+                
+                // 恢復報名按鈕
+                actionBtn.innerText = "立即前往報名";
+                actionBtn.className = "bg-chingfu-red hover:bg-chingfu-darkRed text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-colors duration-200";
                 actionBtn.classList.remove('hidden');
                 
                 // Style icon as Success
@@ -962,11 +969,31 @@
             document.getElementById('step-bar-2').classList.replace('bg-chingfu-red', 'bg-gray-200');
         }
 
-        // 3. Interactive Checklist gate for booking link (Disabled for Sold Out status)
-        function toggleSubmitButton() {
-            // Keeping signature for no-break constraint but disabled core impact since button is fully locked now
-            return false;
-        }
+        // 3. Interactive Checklist gate for booking link
+        const agreeCheckbox = document.getElementById('agree-checkbox');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitBtnText = document.getElementById('submit-btn-text');
+
+        agreeCheckbox.addEventListener('change', function() {
+            if(this.checked) {
+                // Enabled state
+                submitBtn.classList.remove('bg-gray-400', 'cursor-not-allowed');
+                submitBtn.classList.add('bg-chingfu-red', 'hover:bg-chingfu-darkRed');
+                submitBtnText.innerText = "前往填寫預約表單";
+                submitBtn.href = "#"; // 在此替換為實際的 Google 表單連結
+                submitBtn.onclick = function(e) { 
+                    e.preventDefault();
+                    alert('即將前往預約表單填寫資料 (此處可替換為實際表單連結)'); 
+                };
+            } else {
+                // Disabled state
+                submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
+                submitBtn.classList.remove('bg-chingfu-red', 'hover:bg-chingfu-darkRed');
+                submitBtnText.innerText = "請先勾選同意上述說明";
+                submitBtn.href = "javascript:void(0);";
+                submitBtn.onclick = null;
+            }
+        });
 
         // 4. Back to Top Smooth Scroll
         const backToTopBtn = document.getElementById('back-to-top');
