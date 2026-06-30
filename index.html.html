@@ -826,9 +826,9 @@
                     <div class="text-right text-[10px] text-gray-500 font-black mt-1">目前開放報名中 / 限量 30 席 (在院已安全服務破百位長輩)</div>
                 </div>
 
-                <a href="javascript:void(0);" id="submit-btn" class="inline-flex items-center justify-center space-x-3 bg-gray-400 text-white text-xl font-black px-12 py-5 rounded-full shadow-md w-full sm:w-auto cursor-not-allowed transition-colors duration-300">
+                <a href="https://forms.gle/xCEtWmiwMnTYZBWq8" target="_blank" id="submit-btn" class="inline-flex items-center justify-center space-x-3 bg-chingfu-red hover:bg-chingfu-darkRed text-white text-xl font-black px-12 py-5 rounded-full shadow-md w-full sm:w-auto transition-colors duration-300">
                     <i class="fa-solid fa-pen-to-square"></i>
-                    <span id="submit-btn-text">請先勾選同意上述說明</span>
+                    <span id="submit-btn-text">前往填寫預約表單</span>
                 </a>
                 
                 <p class="text-xs text-gray-400 mt-4"><i class="fa-solid fa-shield-halved"></i> 您的資料僅供本次醫療排程使用，絕不外流。若有緊急口腔醫療需求請洽各院區護理站。</p>
@@ -968,31 +968,6 @@
             document.getElementById('step-bar-1').classList.replace('bg-chingfu-red', 'bg-gray-200');
             document.getElementById('step-bar-2').classList.replace('bg-chingfu-red', 'bg-gray-200');
         }
-
-        // 3. Interactive Checklist gate for booking link
-        const agreeCheckbox = document.getElementById('agree-checkbox');
-        const submitBtn = document.getElementById('submit-btn');
-        const submitBtnText = document.getElementById('submit-btn-text');
-
-        agreeCheckbox.addEventListener('change', function() {
-            if(this.checked) {
-                // Enabled state
-                submitBtn.classList.remove('bg-gray-400', 'cursor-not-allowed');
-                submitBtn.classList.add('bg-chingfu-red', 'hover:bg-chingfu-darkRed');
-                submitBtnText.innerText = "前往填寫預約表單";
-                submitBtn.href = "https://forms.gle/xCEtWmiwMnTYZBWq8"; 
-                submitBtn.target = "_blank";
-                submitBtn.onclick = null;
-            } else {
-                // Disabled state
-                submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
-                submitBtn.classList.remove('bg-chingfu-red', 'hover:bg-chingfu-darkRed');
-                submitBtnText.innerText = "請先勾選同意上述說明";
-                submitBtn.href = "javascript:void(0);";
-                submitBtn.removeAttribute('target');
-                submitBtn.onclick = null;
-            }
-        });
 
         // 4. Back to Top Smooth Scroll
         const backToTopBtn = document.getElementById('back-to-top');
